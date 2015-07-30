@@ -1,0 +1,5 @@
+node_modules
+/.settings/*
+
+# *.sublime-project
+*.sublime-workspace
