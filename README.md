@@ -1,7 +1,7 @@
 # jQuery.circleProgressBar.js
 
 **Version: 0.0.1**
-[demo](http://htmlpreview.github.com/?https://github.com/KingMax521/jQuery.circleProgressBar/blob/master/demo.html)
+[demo](http://kingmax521.github.io/jQuery.circleProgressBar)
 <br>
 
 已经有很多强大的环形进度条插件了，比如progressbar.js, Knob等等，但是canvas的毛刺问题导致小的
@@ -33,9 +33,11 @@ $('.percent').percentageLoader({
 **Example**
 
 ```html
-$('.percent').percentageLoader({
-    strokeWidth: 8,
-});
+<div style="width:100px;height:100px;margin:18px auto;">
+    <div class="percent" style="width:80px;height:80px;">
+        <p style="display:none;">8%</p>
+    </div>
+</div>
 ```
 
 ```javascript

@@ -1,6 +1,6 @@
-(function ($) {
+(function($) {
 
-    $.fn.percentageLoader = function (options) {
+    $.fn.percentageLoader = function(options) {
 
         this.each(function() {
             var $this = $(this);
@@ -8,16 +8,16 @@
             var config = $.extend({}, $.fn.percentageLoader.defaultConfig, options);
 
             var val = parseInt($this.children(config.valElement).text()),
-                    init = true,
-                    speed = 200,
-                    w = parseInt($this.css('width'));
-                    h = parseInt($this.css('height'));
-                    rx = w / 2,
-                    ry = h / 2,
-                    r = rx - config.strokeWidth / 2,
-                    z = null,
-                    txt = null,
-                    dstop = null;
+                init = true,
+                speed = 200,
+                w = parseInt($this.css('width'));
+            h = parseInt($this.css('height'));
+            rx = w / 2,
+                ry = h / 2,
+                r = rx - config.strokeWidth / 2,
+                z = null,
+                txt = null,
+                dstop = null;
 
             var paper = Raphael(this, w, h);
 
@@ -26,7 +26,7 @@
                 //自定义arc属性，传入进度值80%，总份数100%，半径80
                 paper.customAttributes.arc = function(value, total, R) {
                     var alpha = 360 / total * value, //角度
-                        a = (90 - alpha) * Math.PI / 180,//弧度
+                        a = (90 - alpha) * Math.PI / 180, //弧度
                         x = rx + R * Math.cos(a),
                         y = ry - R * Math.sin(a),
                         path;
@@ -51,28 +51,28 @@
                     return {
                         path: path
                     };
-                }; 
+                };
                 //绘制背景圆环
                 paper.path().attr({
-                    arc: [100, 100, r], 
-                    'stroke-width': config.strokeWidth, 
+                    arc: [100, 100, r],
+                    'stroke-width': config.strokeWidth,
                     'stroke': config.bgColor
                 });
-                if (!!val ) {
+                if (!!val) {
                     z = paper.path().attr({
                         arc: [0.01, 100, r],
                         'stroke-width': config.strokeWidth,
                         'stroke': config.ringColor,
                         'cursor': "pointer"
-                    }); 
+                    });
                     updateVal(val, 100, r, z, 2);
-                } 
-                
+                }
+
                 txt = paper.text(rx, ry, val + "%").attr({
                     font: config.fontWeight + " " + config.fontSize + " Arial",
                     fill: config.textColor
-                }); 
-            }; 
+                });
+            };
             minit();
             // //色谱
             // function getColor(size) {
@@ -105,10 +105,10 @@
                         }, 750, "elastic");
                     }
                 }
-            }; 
-            
+            };
+
         });
-        
+
     };
     //默认值
     $.fn.percentageLoader.defaultConfig = {

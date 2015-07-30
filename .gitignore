@@ -1,5 +1,7 @@
 node_modules
 /.settings/*
 
+demo.html
+
 # *.sublime-project
 *.sublime-workspace
