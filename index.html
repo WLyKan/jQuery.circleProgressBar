@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Jquery.circleprogressbar by KingMax521</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/KingMax521/jQuery.circleProgressBar">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Jquery.circleprogressbar</h1>
+            <h2>Beautiful progress bars with animated SVG(VML) paths.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/KingMax521/jQuery.circleProgressBar/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/KingMax521/jQuery.circleProgressBar/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="jquerycircleprogressbarjs" class="anchor" href="#jquerycircleprogressbarjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.circleProgressBar.js</h1>
+
+<p><strong>Version: 0.0.1</strong>
+<a href="https://github.com/KingMax521/jQuery.circleProgressBar/blob/master/demo.html">demo</a>
+<br></p>
+
+<p>已经有很多强大的环形进度条插件了，比如progressbar.js, Knob等等，但是canvas的毛刺问题导致小的
+图形很丑。而支持SVG的插件又不兼容IE8，毕竟IE8还有很大的市场占有。
+jQuery.circleProgressBar.js基于Raphael，支持SVG和VML，所以可以在IE8上也有完美的图形。
+有了这个插件，就不用催设计师的稿子了.....</p>
+
+<p>Beautiful progress bars with animated SVG(VML) paths.
+This plugin is based on Rapael.js and supports all major browsers including <strong>IE8+</strong>.</p>
+
+<h4>
+<a id="installing-options" class="anchor" href="#installing-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing options:</h4>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>.percent<span class="pl-pds">'</span></span>).percentageLoader({
+    <span class="pl-c">//percentage value container</span>
+    valElement<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>p<span class="pl-pds">'</span></span>,
+    <span class="pl-c">//ring width</span>
+    strokeWidth<span class="pl-k">:</span> <span class="pl-c1">20</span>,
+    <span class="pl-c">//background ring color</span>
+    bgColor<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#d9d9d9<span class="pl-pds">'</span></span>,
+    <span class="pl-c">//ring color</span>
+    ringColor<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#d53f3f<span class="pl-pds">'</span></span>,
+    <span class="pl-c">//text color</span>
+    textColor<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#9a9a9a<span class="pl-pds">'</span></span>,
+    fontSize<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>12px<span class="pl-pds">'</span></span>,
+    fontWeight<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>normal<span class="pl-pds">'</span></span>
+});</pre></div>
+
+<p><strong>Example</strong></p>
+
+<div class="highlight highlight-html"><pre>$('.percent').percentageLoader({
+    strokeWidth: 8,
+});</pre></div>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>.percent<span class="pl-pds">'</span></span>).percentageLoader({
+    strokeWidth<span class="pl-k">:</span> <span class="pl-c1">8</span>,
+});</pre></div>
+
+<h1>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h1>
+
+<h1>
+<a id="thanks" class="anchor" href="#thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks</h1>
+
+<p>This is my first plugin, so...Thanks a lot for your help!</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/KingMax521">KingMax521</a> can be found on <a href="https://github.com/KingMax521/jQuery.circleProgressBar">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
