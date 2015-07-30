@@ -33,10 +33,8 @@ $('.percent').percentageLoader({
 **Example**
 
 ```html
-<div style="width:100px;height:100px;margin:18px auto;">
-    <div class="percent" style="width:80px;height:80px;">
-        <p style="display:none;">8%</p>
-    </div>
+<div class="percent">
+    <p>8%</p>
 </div>
 ```
 
