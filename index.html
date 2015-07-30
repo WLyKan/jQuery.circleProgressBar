@@ -49,9 +49,14 @@
         <h1>
 <a id="jquerycircleprogressbarjs" class="anchor" href="#jquerycircleprogressbarjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.circleProgressBar.js</h1>
 
-<p><strong>Version: 0.0.1</strong>
-<a href="https://github.com/KingMax521/jQuery.circleProgressBar/blob/master/demo.html">demo</a>
-<br></p>
+<p><strong>Version: 0.0.1</strong></p>
+
+
+<div style="width:100px;height:100px;margin:18px auto;">
+	<div class="percent" style="width:80px;height:80px;">
+		<p style="display:none;">8%</p>
+	</div>
+</div>
 
 <p>已经有很多强大的环形进度条插件了，比如progressbar.js, Knob等等，但是canvas的毛刺问题导致小的
 图形很丑。而支持SVG的插件又不兼容IE8，毕竟IE8还有很大的市场占有。
@@ -80,12 +85,6 @@ This plugin is based on Rapael.js and supports all major browsers including <str
 });</pre></div>
 
 <p><strong>Example</strong></p>
-
-<div style="width:100px;height:100px;margin:auto;">
-	<div class="percent" style="width:80px;height:80px;">
-		<p>8%</p>
-	</div>
-</div>
 
 <div class="highlight highlight-html"><pre>$('.percent').percentageLoader({
     strokeWidth: 8,
