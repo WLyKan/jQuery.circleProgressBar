@@ -14,7 +14,7 @@
                 h = parseInt($this.css('height')),
                 rx = w / 2,
                 ry = h / 2,
-                r = rx - config.strokeWidth / 2 - 1.55, //修正VML strokeWidth
+                r = rx - config.strokeWidth / 2 - 1.6, //修正VML strokeWidth
                 z = null,
                 txt = null,
                 dstop = null;
