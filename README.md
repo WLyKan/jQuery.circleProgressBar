@@ -9,7 +9,7 @@
 jQuery.circleProgressBar.js基于Raphael，支持SVG和VML，所以可以在IE8上也有完美的图形。
 有了这个插件，就不用催设计师的稿子了.....
 
-Beautiful progress bars with animated SVG(VML) paths.
+Practical progress bars with animated SVG(VML) paths.
 This plugin is based on Rapael.js and supports all major browsers including **IE8+**.
 #### Installing options:
 
