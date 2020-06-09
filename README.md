@@ -1,7 +1,7 @@
 # jQuery.circleProgressBar.js
 
 **Version: 0.0.1**
-[demo](http://wlykan.github.io/jQuery.circleProgressBar)
+[demo](https://nav.vikibeta.com/)
 <br>
 
 已经有很多强大的环形进度条插件了，比如progressbar.js, Knob等等，但是canvas的毛刺问题导致小的
